@@ -13,6 +13,14 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'brihaspathi.com',
+      },
+    ],
+  },
 };
 
 export default nextConfig;
