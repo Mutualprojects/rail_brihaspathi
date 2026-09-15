@@ -92,7 +92,7 @@ export default function ContactUsPage() {
 
       {/* ═══════════ HERO ═══════════ */}
       <section
-        className="relative overflow-hidden flex items-center min-h-[85vh] sm:min-h-screen"
+        className="relative overflow-hidden flex pt-24 h-[60vh] min-h-[500px]"
         style={{
           backgroundImage: `linear-gradient(135deg, rgba(10, 22, 40, 0.88) 0%, rgba(7, 81, 138, 0.72) 100%), url('/20156.jpg')`,
           backgroundSize: "cover",
@@ -101,12 +101,12 @@ export default function ContactUsPage() {
         }}
       >
         {/* grid background */}
-        <div className="absolute inset-0 pointer-events-none"
+        <div className="absolute inset-0 pointer-events-none opacity-40"
           style={{ backgroundImage: `linear-gradient(rgba(255,255,255,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.05) 1px,transparent 1px)`, backgroundSize: "56px 56px" }} />
 
         {/* rail stripe */}
         <div className="absolute left-0 right-0 overflow-hidden pointer-events-none"
-          style={{ top: "68%", height: "1.5px", background: `linear-gradient(90deg,transparent,${S}60,transparent)` }}>
+          style={{ top: "40%", height: "1.5px", background: `linear-gradient(90deg,transparent,${S}60,transparent)` }}>
           <div style={{
             position: "absolute", top: 0, bottom: 0, width: 200,
             background: `linear-gradient(90deg,transparent,${S},white,${S},transparent)`,
@@ -114,78 +114,47 @@ export default function ContactUsPage() {
           }} />
         </div>
 
-        {/* orbs */}
-        <div className="absolute pointer-events-none hidden sm:block mix-blend-screen"
-          style={{ right: "-10%", top: "10%", width: 500, height: 500, borderRadius: "50%", background: `radial-gradient(circle,${S}33 0%,transparent 65%)` }} />
-        <div className="absolute pointer-events-none mix-blend-screen"
-          style={{ left: "-8%", bottom: "5%", width: 300, height: 300, borderRadius: "50%", background: `radial-gradient(circle,${R}33 0%,transparent 65%)` }} />
-
-        <div ref={heroRef.ref}
-          className="relative z-10 w-full max-w-5xl mx-auto px-5 sm:px-10 lg:px-14 pt-20 pb-16 sm:pt-32 sm:pb-24 text-center">
-
-          {/* badge */}
-          <div style={{ opacity: heroRef.v ? 1 : 0, transform: heroRef.v ? "translateY(0)" : "translateY(20px)", transition: "all .7s ease" }}>
-            <span className="inline-flex items-center gap-2 mb-6 sm:mb-8 px-5 py-2 rounded-full text-xs font-black tracking-widest uppercase"
-              style={{ background: `${S}1A`, border: `1px solid ${S}40`, color: S }}>
-              <span className="w-1.5 h-1.5 rounded-full" style={{ background: S, animation: "glow-pulse 2s ease-in-out infinite" }} />
-              Contact Us
-            </span>
-          </div>
-
-          {/* headline */}
-          <h1 className="font-black text-white mb-6 leading-[1.08] tracking-tight"
-            style={{
-              fontSize: "clamp(2rem,5vw,3.75rem)",
-              opacity: heroRef.v ? 1 : 0, transform: heroRef.v ? "translateY(0)" : "translateY(36px)", transition: "all .8s ease .12s"
-            }}>
-            Let's Build the Future of<br />
-            <span style={{ background: `linear-gradient(135deg,${S} 0%,#6dd5fa 100%)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
-              Railways Together
-            </span>
-          </h1>
-
-          {/* sub */}
-          <p className="max-w-2xl mx-auto leading-relaxed mb-8 sm:mb-10 text-base sm:text-lg"
-            style={{
-              color: "rgba(255,255,255,.72)",
-              opacity: heroRef.v ? 1 : 0, transform: heroRef.v ? "translateY(0)" : "translateY(32px)", transition: "all .8s ease .24s"
-            }}>
-            Whether you are looking for a railway signalling solution, connected railway technology,
-            intelligent transportation system or a customized product development partner, Brihaspathi Rail
-            can work with you to transform your requirements into reliable technology.
-          </p>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-wrap items-center justify-center gap-4"
-            style={{ opacity: heroRef.v ? 1 : 0, transition: "opacity 1s ease .36s" }}>
-            <a href="#form"
-              className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl font-bold text-white text-sm sm:text-base no-underline transition-all duration-300 hover:-translate-y-1"
-              style={{ background: `linear-gradient(135deg,${R},${S})`, boxShadow: `0 8px 30px ${R}50` }}>
-              Start a Conversation <ArrowRight size={18} />
-            </a>
-            <a href="#facilities"
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-bold text-white text-sm sm:text-base no-underline transition-all duration-300 hover:bg-white/10"
-              style={{ border: "1.5px solid rgba(255,255,255,0.25)" }}>
-              View Our Locations <Compass size={18} />
-            </a>
-          </div>
-
-          {/* Strip banner */}
-          <div className="mt-10 sm:mt-12 inline-flex flex-wrap items-center justify-center gap-3 px-5 py-3 rounded-xl"
-            style={{ border: `1px solid rgba(255,255,255,.14)`, backdropFilter: "blur(12px)", background: "rgba(255,255,255,.07)" }}>
-            <Train size={16} color={S} />
-            <div className="text-left">
-              <p className="text-xs font-bold tracking-widest uppercase mb-0.5" style={{ color: "rgba(255,255,255,.5)", fontSize: 9 }}>Brihaspathi Rail Private Limited</p>
-              <p className="text-xs sm:text-sm font-bold text-white">Smart Technology for Smarter Railways</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom wave */}
-        <div className="absolute bottom-0 left-0 right-0">
+        {/* Bottom wave - moved here so image can sit OVER it */}
+        <div className="absolute bottom-0 left-0 right-0 z-0 pointer-events-none">
           <svg viewBox="0 0 1440 72" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full block">
             <path d="M0 72L60 62C120 52 240 32 360 24C480 16 600 20 720 28C840 36 960 48 1080 50C1200 52 1320 44 1380 40L1440 36V72H0Z" fill="white" />
           </svg>
+        </div>
+
+        <div ref={heroRef.ref}
+          className="relative z-10 w-full max-w-6xl mx-auto px-5 sm:px-10 lg:px-14 flex flex-col md:flex-row items-center justify-between gap-10 h-full pb-4">
+
+          {/* Left Content */}
+          <div className="w-full md:w-1/2 text-left flex flex-col justify-center h-full pb-10">
+            {/* badge */}
+            <div style={{ opacity: heroRef.v ? 1 : 0, transform: heroRef.v ? "translateY(0)" : "translateY(20px)", transition: "all .7s ease" }}>
+              <span className="inline-flex items-center gap-2 mb-6 sm:mb-8 px-5 py-2 rounded-full text-xs font-black tracking-widest uppercase"
+                style={{ background: `${S}1A`, border: `1px solid ${S}40`, color: S }}>
+                <span className="w-1.5 h-1.5 rounded-full" style={{ background: S, animation: "glow-pulse 2s ease-in-out infinite" }} />
+                Contact Us
+              </span>
+            </div>
+
+            {/* headline */}
+            <h1 className="font-black text-white mb-0 leading-[1.1] tracking-tight"
+              style={{
+                fontSize: "clamp(2.5rem,5vw,3.75rem)",
+                opacity: heroRef.v ? 1 : 0, transform: heroRef.v ? "translateY(0)" : "translateY(36px)", transition: "all .8s ease .12s"
+              }}>
+              Let's Build the Future of<br />
+              <span style={{ background: `linear-gradient(135deg,${S} 0%,#6dd5fa 100%)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
+                Railways Together
+              </span>
+            </h1>
+          </div>
+
+          {/* Right Image - Anchored to bottom */}
+          <div className="w-full md:w-1/2 flex justify-end items-end h-full relative"
+            style={{ opacity: heroRef.v ? 1 : 0, transform: heroRef.v ? "translateX(0)" : "translateX(36px)", transition: "all .8s ease .24s" }}>
+            <img src="/ChatGPT Image Sep 15, 2026, 05_13_01 PM.png" alt="Contact BTL Rail" 
+                 className="w-full max-w-[500px] object-contain origin-bottom mb-12 lg:mb-20" 
+                 style={{ filter: "drop-shadow(0 25px 40px rgba(0,0,0,0.6))", transform: "scale(1.05)" }} />
+          </div>
         </div>
       </section>
 
