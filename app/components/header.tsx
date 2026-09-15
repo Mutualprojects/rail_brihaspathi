@@ -54,7 +54,6 @@ export default function Header() {
     { label: "Services", items: services, basePath: "/services" },
     { label: "Solutions", items: solutions, basePath: "/solutions" },
     { label: "Products", items: products, basePath: "/products" },
-    { label: "Case Studies", href: "/case-studies" },
     { label: "Contact", href: "/contact-us" },
   ];
 
