@@ -77,7 +77,7 @@ export default function AboutPage() {
           </div>
 
           <h1
-            className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight mb-6 drop-shadow-lg transition-all duration-1000 delay-500 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+            className={`text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white tracking-tight mb-6 drop-shadow-lg transition-all duration-1000 delay-500 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           >
             The Heartbeat of <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">Indian Railways</span>
           </h1>

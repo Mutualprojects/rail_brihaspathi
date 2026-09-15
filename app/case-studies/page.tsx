@@ -109,7 +109,7 @@ export default function CaseStudiesPage() {
             <span className="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-500 animate-pulse" />
             Projects & Case Studies
           </div>
-          <h1 className="text-4xl md:text-5xl font-black text-gray-900 dark:text-white tracking-tight mb-6 leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-[2.75rem] font-black text-gray-900 dark:text-white tracking-tight mb-6 leading-tight">
             Turning Engineering Challenges into <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#07518A] to-[#1A8FD1]">Technology Solutions</span>
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">

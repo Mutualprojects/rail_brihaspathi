@@ -79,7 +79,7 @@ function VisionSection() {
             ref={heading.ref}
             style={{ opacity: heading.visible ? 1 : 0, transform: heading.visible ? "translateY(0)" : "translateY(32px)", transition: "all 0.7s ease 0.15s" }}
           >
-            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black leading-[1.1] mb-8" style={{ color: ink }}>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black leading-[1.1] mb-8" style={{ color: ink }}>
               A rail network<br />
               that{" "}
               <span style={{ background: `linear-gradient(135deg,${rail} 0%,${signal} 100%)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>

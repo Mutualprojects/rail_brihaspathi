@@ -142,7 +142,7 @@ export default function MainHero() {
           </div>
 
           <h1
-            className="font-extrabold tracking-tight max-w-2xl text-4xl sm:text-5xl lg:text-5xl xl:text-6xl leading-[1.1]"
+            className="font-extrabold tracking-tight max-w-2xl text-3xl sm:text-4xl lg:text-[2.75rem] xl:text-5xl 2xl:text-6xl leading-[1.15]"
             style={{
               background: "linear-gradient(135deg, #0d1b2a 0%, #07518a 100%)",
               WebkitBackgroundClip: "text",

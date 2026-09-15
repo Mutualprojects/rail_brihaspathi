@@ -40,7 +40,7 @@ export default function Expertise() {
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse" />
             <span>OUR EXPERTISE</span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold text-gray-900 leading-tight mb-6">
             Strategic Technology <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-green-500">Verticals</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-600 font-medium leading-relaxed">

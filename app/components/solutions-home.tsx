@@ -22,7 +22,7 @@ export default function SolutionsHome() {
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse" />
             <span>OUR SOLUTIONS</span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold text-gray-900 leading-tight mb-4">
             Our <span className="text-emerald-600">Solutions</span>
           </h2>
           <p className="text-lg text-gray-600 font-medium leading-relaxed">

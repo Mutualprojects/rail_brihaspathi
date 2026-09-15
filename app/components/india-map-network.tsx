@@ -61,7 +61,7 @@ export default function IndiaMapNetwork() {
             style={{ background: `rgba(7, 81, 138, 0.1)`, border: `1px solid rgba(7, 81, 138, 0.2)`, color: '#07518A' }}>
             Core Capabilities
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#07518A] mb-4 sm:mb-6 leading-tight tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold text-[#07518A] mb-4 sm:mb-6 leading-tight tracking-tight">
             Delivering Transformative <br className="hidden sm:block" />
             <span className="text-[#07518A]">Railway Solutions</span>
           </h2>

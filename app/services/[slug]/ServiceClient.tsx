@@ -62,7 +62,7 @@ export default function ServiceClient({ slug }: ServiceProps) {
           >
             <Icon className="w-10 h-10 text-white" />
           </motion.div>
-          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight drop-shadow-lg">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 tracking-tight drop-shadow-lg">
             {service.title}
           </h1>
           <p className="text-base sm:text-lg md:text-2xl text-gray-100 font-light leading-relaxed max-w-3xl mx-auto drop-shadow-md">

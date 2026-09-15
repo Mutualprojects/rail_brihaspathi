@@ -29,7 +29,7 @@ export default function About() {
             <span>ABOUT US</span>
           </div>
           
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-[1.15] tracking-tight mb-8">
+          <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] xl:text-5xl font-extrabold text-gray-900 leading-[1.15] tracking-tight mb-8">
             Pioneering the Next Era of{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-600">
               Railway Technology
