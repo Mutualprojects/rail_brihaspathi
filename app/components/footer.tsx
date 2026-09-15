@@ -92,7 +92,7 @@ export default function Footer() {
                 <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center shrink-0 border border-white/10 group-hover:bg-[#1A8FD1] group-hover:border-[#1A8FD1] transition-colors duration-300">
                   <Phone size={20} className="text-[#1A8FD1] group-hover:text-white transition-colors duration-300" />
                 </div>
-                <a href="tel:+914023315555" className="text-blue-100/80 hover:text-white transition-colors text-[15px] pt-1 tracking-wide">+91 40 2331 5555</a>
+                <a href="tel:+919247558003" className="text-blue-100/80 hover:text-white transition-colors text-[15px] pt-1 tracking-wide">+91 92475 58003</a>
               </li>
               <li className="flex items-center gap-4 group">
                 <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center shrink-0 border border-white/10 group-hover:bg-[#1A8FD1] group-hover:border-[#1A8FD1] transition-colors duration-300">

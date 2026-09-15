@@ -49,14 +49,14 @@ const facilities = [
     badgeColor: "#07518A",
     address: "Thuniki Bollaram Manufacturing Plant, Hyderabad / Medchal-Malkajgiri District, Telangana, India",
     city: "Thuniki Bollaram, Telangana",
-    desc: "State-of-the-art manufacturing plant for Axle Counter Monitoring Systems, Failsafe Network Multiplexers (FNMUX), and rail safety hardware assembly.",
-    tags: ["Axle Counter Production", "FNMUX Assembly", "Environmental Stress Testing", "ISO & SIL Compliant"],
+    desc: "State-of-the-art manufacturing plant for Failsafe Network Multiplexers (FNMUX), and rail safety hardware assembly.",
+    tags: ["FNMUX Assembly", "Environmental Stress Testing", "ISO & SIL Compliant"],
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Thuniki+Bollaram+Telangana+India",
   },
 ];
 
 const contactMeta = [
-  { icon: Phone, label: "Call / WhatsApp", val: "+91 81255 94873", href: "tel:+918125594873" },
+  { icon: Phone, label: "Call / WhatsApp", val: "+91 92475 58003", href: "tel:+919247558003" },
   { icon: Mail, label: "Email Us", val: "info@brihaspathirail.com", href: "mailto:info@brihaspathirail.com" },
   { icon: Building2, label: "R&D Center", val: "Bangalore - 560092", href: "#facilities" },
   { icon: Factory, label: "Manufacturing Plant", val: "Thuniki Bollaram, TS", href: "#facilities" },
@@ -368,7 +368,7 @@ export default function ContactUsPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[
                     { name: "email", label: "Email Address *", ph: "you@company.com", type: "email", req: true },
-                    { name: "phone", label: "Phone Number", ph: "+91 81255 94873", type: "tel", req: false },
+                    { name: "phone", label: "Phone Number", ph: "+91 92475 58003", type: "tel", req: false },
                   ].map(f => (
                     <div key={f.name}>
                       <label className="block text-xs font-black tracking-widest uppercase mb-2" style={{ color: "#8aa4be" }}>{f.label}</label>

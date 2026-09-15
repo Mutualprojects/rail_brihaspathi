@@ -16,7 +16,7 @@ const DEFAULT_BG = "/Railway solutions/shot-electric-train-railway.jpg"
 
 const DEFAULT_TRACKS: Track[] = [
   { id: "t1", title: "Smart Signalling Systems", artist: "BTL Rail Innovation", colorA: "#07518a", colorB: "#1a8fd1" },
-  { id: "t2", title: "Axle Counter Monitoring", artist: "SIL-4 Safety Solutions", colorA: "#16a34a", colorB: "#052e16" },
+  { id: "t2", title: "System Integration", artist: "SIL-4 Safety Solutions", colorA: "#16a34a", colorB: "#052e16" },
   { id: "t3", title: "Train Control & Protection", artist: "Next-Gen Automation", colorA: "#74b9f1", colorB: "#07518a" },
   { id: "t4", title: "IoT Remote Diagnostics", artist: "Real-Time Rail Analytics", colorA: "#f59e0b", colorB: "#78350f" },
   { id: "t5", title: "Interlocking Systems", artist: "Mission-Critical Tech", colorA: "#6366f1", colorB: "#1e1b4b" },

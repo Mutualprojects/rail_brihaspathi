@@ -82,8 +82,8 @@ const CAPABILITIES = [
   },
   {
     key: "axle",
-    label: "Axle Counter\nMonitoring",
-    href: "/products/axle-counter-monitoring-system",
+    label: "FnMux\nSystem",
+    href: "/products/non-vital-multiplexer",
     from: "#3ecf6a",
     to: "#118a3e",
     corner: "br" as const,

@@ -2,27 +2,24 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Monitor, Network, Shield, Train, MapPin, Bus, X, ArrowRight, CheckCircle2, ChevronRight } from "lucide-react";
+import { Monitor, Network, Shield, Train, MapPin, Bus, X, ArrowRight, CheckCircle2, ChevronRight, type LucideIcon } from "lucide-react";
 import Link from "next/link";
 
-const caseStudies = [
-  {
-    id: "01",
-    title: "Axle Counter Monitoring System",
-    icon: Monitor,
-    description: "Intelligent monitoring and diagnostic platform for axle counter systems.",
-    challenge: "Railway operators require better visibility into the health and operational status of axle counter systems.",
-    approach: "Develop an intelligent monitoring and diagnostic platform capable of collecting equipment status, events and health information.",
-    outcome: [
-      "Centralized monitoring",
-      "Faster fault identification",
-      "Improved maintenance visibility",
-      "Reduced troubleshooting time",
-      "Better asset availability"
-    ],
-    bgGradient: "from-[#07518A] to-[#1A8FD1]",
-    image: "/Railway solutions/Monitoring & Diagnostics.jpg"
-  },
+export type CaseStudy = {
+  id: string;
+  title: string;
+  icon: LucideIcon;
+  description: string;
+  challenge?: string;
+  approach: string;
+  focusAreas?: string[];
+  features?: string[];
+  outcome?: string[];
+  bgGradient: string;
+  image: string;
+};
+
+const caseStudies: CaseStudy[] = [
   {
     id: "02",
     title: "FnMux",
