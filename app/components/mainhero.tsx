@@ -142,7 +142,7 @@ export default function MainHero() {
           </div>
 
           <h1
-            className="font-extrabold tracking-tight max-w-2xl text-3xl xs:text-4xl sm:text-5xl lg:text-6xl leading-[1.1]"
+            className="font-extrabold tracking-tight max-w-2xl text-4xl sm:text-5xl lg:text-5xl xl:text-6xl leading-[1.1]"
             style={{
               background: "linear-gradient(135deg, #0d1b2a 0%, #07518a 100%)",
               WebkitBackgroundClip: "text",
@@ -210,8 +210,8 @@ export default function MainHero() {
                       animationDelay: `${i * 0.09}s`,
                     }}
                   >
-                    <c.Icon className="w-6 h-6 xs:w-8 xs:h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 text-white/95 drop-shadow-sm transition-transform duration-300 group-hover:scale-110 shrink-0" />
-                    <span className="mt-1 sm:mt-2 text-white font-extrabold uppercase leading-tight whitespace-pre-line drop-shadow-sm text-center text-[10px] xs:text-xs sm:text-sm lg:text-base px-1">
+                    <c.Icon className="w-6 h-6 xs:w-8 xs:h-8 sm:w-10 sm:h-10 lg:w-9 lg:h-9 xl:w-12 xl:h-12 text-white/95 drop-shadow-sm transition-transform duration-300 group-hover:scale-110 shrink-0" />
+                    <span className="mt-1 sm:mt-1.5 xl:mt-2 text-white font-extrabold uppercase leading-tight whitespace-pre-line drop-shadow-sm text-center text-[10px] xs:text-xs sm:text-sm lg:text-[12px] xl:text-[15px] px-1 sm:px-2 tracking-wide w-full overflow-hidden text-ellipsis">
                       {c.label}
                     </span>
                   </a>
@@ -271,14 +271,20 @@ export default function MainHero() {
         }
         @media (min-width: 1024px) {
           .bth-disc-size {
-            width: min(52vh, 520px);
-            height: min(52vh, 520px);
+            width: min(48vh, 420px, 38vw);
+            height: min(48vh, 420px, 38vw);
           }
         }
-        @media (min-width: 1440px) {
+        @media (min-width: 1280px) {
           .bth-disc-size {
-            width: min(56vh, 580px);
-            height: min(56vh, 580px);
+            width: min(54vh, 520px, 42vw);
+            height: min(54vh, 520px, 42vw);
+          }
+        }
+        @media (min-width: 1536px) {
+          .bth-disc-size {
+            width: min(58vh, 580px);
+            height: min(58vh, 580px);
           }
         }
         .bth-disc {
