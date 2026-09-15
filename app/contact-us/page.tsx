@@ -30,36 +30,23 @@ const verticals = [
 
 const facilities = [
   {
-    type: "R&D & TECH CENTER",
-    title: "R&D & Innovation Center",
-    company: "Brihaspathi Rail Pvt. Ltd",
-    icon: Building2,
-    badgeColor: "#1A8FD1",
-    address: "4th Floor, Sattva Galleria, New Airport Road, Byatarayanapura Village, Yelahanka Hobli, Bangalore - 560092, Karnataka, India",
-    city: "Bangalore, Karnataka",
-    desc: "Center for indigenous railway signalling design, SIL-4 hardware engineering, IoT embedded software development & automated testing.",
-    tags: ["Embedded Signalling R&D", "SIL-4 Hardware Verification", "IoT Software Lab", "Prototyping"],
-    mapUrl: "https://www.google.com/maps/search/?api=1&query=Sattva+Galleria+New+Airport+Road+Yelahanka+Bangalore+560092",
-  },
-  {
-    type: "MANUFACTURING PLANT",
-    title: "Manufacturing & Production Facility",
+    type: "REGISTERED OFFICE & MANUFACTURING",
+    title: "Registered Office & Manufacturing Plant",
     company: "Brihaspathi Rail Pvt. Ltd",
     icon: Factory,
     badgeColor: "#07518A",
-    address: "Thuniki Bollaram Manufacturing Plant, Hyderabad / Medchal-Malkajgiri District, Telangana, India",
-    city: "Thuniki Bollaram, Telangana",
-    desc: "State-of-the-art manufacturing plant for Failsafe Network Multiplexers (FNMUX), and rail safety hardware assembly.",
-    tags: ["FNMUX Assembly", "Environmental Stress Testing", "ISO & SIL Compliant"],
-    mapUrl: "https://www.google.com/maps/search/?api=1&query=Thuniki+Bollaram+Telangana+India",
+    address: "Regd Office: Sy.No.340, Plot No.198/2, 201,202,203,204, Tuniki Bollaram, Siddipet, Telangana, India, 502279",
+    city: "Tuniki Bollaram, Siddipet",
+    desc: "Our state-of-the-art facility for indigenous railway signalling design, SIL-4 hardware engineering, and FNMUX production.",
+    tags: ["Embedded Signalling R&D", "FNMUX Assembly", "ISO & SIL Compliant", "IoT Software Lab"],
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Tuniki+Bollaram+Siddipet+Telangana+India",
   },
 ];
 
 const contactMeta = [
   { icon: Phone, label: "Call / WhatsApp", val: "+91 92475 58003", href: "tel:+919247558003" },
   { icon: Mail, label: "Email Us", val: "info@brihaspathirail.com", href: "mailto:info@brihaspathirail.com" },
-  { icon: Building2, label: "R&D Center", val: "Bangalore - 560092", href: "#facilities" },
-  { icon: Factory, label: "Manufacturing Plant", val: "Thuniki Bollaram, TS", href: "#facilities" },
+  { icon: Building2, label: "Registered Office", val: "Tuniki Bollaram, TS", href: "#facilities" },
 ];
 
 export default function ContactUsPage() {
@@ -212,19 +199,19 @@ export default function ContactUsPage() {
             style={{ opacity: facRef.v ? 1 : 0, transform: facRef.v ? "translateY(0)" : "translateY(28px)", transition: "all .7s ease" }}>
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-black tracking-widest uppercase mb-3"
               style={{ background: `${R}12`, border: `1px solid ${R}25`, color: R }}>
-              <MapPin size={13} color={R} /> Our Offices & Production Hubs
+              <MapPin size={13} color={R} /> Our Office & Production Hub
             </span>
             <h2 className="font-black text-2xl sm:text-4xl mb-3" style={{ color: R }}>
               Where Innovation Meets Precision Manufacturing
             </h2>
             <p className="max-w-xl mx-auto text-sm sm:text-base leading-relaxed" style={{ color: "#5a7590" }}>
-              Our dedicated R&D hub in Bangalore and state-of-the-art manufacturing plant in Telangana power our mission to build SIL-4 certified railway technology.
+              Our state-of-the-art manufacturing and R&D plant in Telangana powers our mission to build SIL-4 certified railway technology.
             </p>
             <div className="w-16 h-[3.5px] rounded-full mx-auto mt-4" style={{ background: `linear-gradient(90deg,${R},${S})` }} />
           </div>
 
-          {/* 2 Facility Cards */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
+          {/* 1 Facility Card */}
+          <div className="grid grid-cols-1 max-w-3xl mx-auto gap-8 lg:gap-10">
             {facilities.map((fac, i) => {
               const Icon = fac.icon;
               return (

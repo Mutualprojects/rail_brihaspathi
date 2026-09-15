@@ -83,9 +83,9 @@ export default function Footer() {
                   <MapPin size={20} className="text-[#1A8FD1] group-hover:text-white transition-colors duration-300" />
                 </div>
                 <span className="text-blue-100/80 text-[15px] leading-relaxed pt-1.5 group-hover:text-white transition-colors">
-                  4th Floor, Sattva Galleria, New Airport Road,<br />
-                  Byatarayanapura Village, Yelahanka Hobli,<br />
-                  Bangalore - 560092, Karnataka, India
+                  Regd Office: Sy.No.340, Plot No.198/2, 201,202,203,204,<br />
+                  Tuniki Bollaram, Siddipet,<br />
+                  Telangana, India, 502279
                 </span>
               </li>
               <li className="flex items-center gap-4 group">
