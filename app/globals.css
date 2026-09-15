@@ -19,8 +19,62 @@
   }
 }
 
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Keep media and long content from forcing horizontal scroll on small screens */
+img,
+video,
+svg {
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+li {
+  overflow-wrap: break-word;
+}
+
+/* Nicer, balanced wrapping of headings on every screen size */
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.7s ease both;
+}
+
+/* Ensure particles canvas fills its container */
+#particles-hero canvas {
+  display: block !important;
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  /* canvas gets pointer events so cursor interaction works,
+     but the wrapper div is pointer-events:none so buttons above still clickable */
+  pointer-events: all !important;
 }
