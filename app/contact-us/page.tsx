@@ -100,19 +100,7 @@ export default function ContactUsPage() {
           backgroundAttachment: "fixed",
         }}
       >
-        {/* grid background */}
-        <div className="absolute inset-0 pointer-events-none opacity-40"
-          style={{ backgroundImage: `linear-gradient(rgba(255,255,255,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.05) 1px,transparent 1px)`, backgroundSize: "56px 56px" }} />
 
-        {/* rail stripe */}
-        <div className="absolute left-0 right-0 overflow-hidden pointer-events-none"
-          style={{ top: "40%", height: "1.5px", background: `linear-gradient(90deg,transparent,${S}60,transparent)` }}>
-          <div style={{
-            position: "absolute", top: 0, bottom: 0, width: 200,
-            background: `linear-gradient(90deg,transparent,${S},white,${S},transparent)`,
-            animation: "rail-move 3.5s linear infinite"
-          }} />
-        </div>
 
         {/* Bottom wave - moved here so image can sit OVER it */}
         <div className="absolute bottom-0 left-0 right-0 z-0 pointer-events-none">
