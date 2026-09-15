@@ -132,10 +132,10 @@ export default function MainHero() {
       />
 
       {/* ── Hero content — side by side on desktop, stacked on mobile ── */}
-      <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center flex-1 min-h-0 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full gap-8 sm:gap-10 lg:gap-16 pt-4 sm:pt-8 lg:pt-0 lg:mt-[-3vh] pb-6 lg:pb-0">
+      <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center flex-1 min-h-0 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full gap-8 sm:gap-10 lg:gap-12 xl:gap-16 pt-4 sm:pt-8 lg:pt-0 lg:mt-[-3vh] pb-6 lg:pb-0">
 
         {/* Left side: Text Content */}
-        <div className="flex flex-col items-center lg:items-start text-center lg:text-left flex-1 min-h-0">
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-left w-full lg:w-[50%] xl:w-[55%] min-h-0 shrink-0">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-50/90 border border-sky-200/80 text-[#07518a] text-xs sm:text-sm font-semibold tracking-wide shadow-sm mb-3 sm:mb-4 backdrop-blur-sm">
             <span className="flex h-2 w-2 rounded-full bg-[#1a8fd1] animate-ping" />
             <span>NEXT-GEN RAILWAY AUTOMATION & SAFETY</span>
@@ -176,8 +176,8 @@ export default function MainHero() {
         </div>
 
         {/* Right side: Capability Disc */}
-        <div className="flex-1 flex justify-center items-center shrink-0 w-full lg:w-auto">
-          <div className="relative shrink-0 mt-2 sm:mt-4 lg:mt-0 bth-disc-size">
+        <div className="flex justify-center items-center shrink-0 w-full lg:w-[50%] xl:w-[45%] mt-6 lg:mt-0">
+          <div className="relative shrink-0 bth-disc-size">
             {/* Ambient glow behind disc */}
             <div className="absolute -inset-3 sm:-inset-5 rounded-full bg-gradient-to-tr from-sky-400/20 via-blue-600/15 to-amber-400/20 blur-xl opacity-70 animate-pulse pointer-events-none" />
 
@@ -191,17 +191,17 @@ export default function MainHero() {
               {CAPABILITIES.map((c, i) => {
                 const posClass =
                   c.corner === "tl"
-                    ? "top-0 left-0 items-center justify-center"
+                    ? "top-0 left-0 items-center justify-center pt-2 pl-2 sm:pt-4 sm:pl-4 lg:pt-6 lg:pl-6"
                     : c.corner === "tr"
-                      ? "top-0 right-0 items-center justify-center"
+                      ? "top-0 right-0 items-center justify-center pt-2 pr-2 sm:pt-4 sm:pr-4 lg:pt-6 lg:pr-6"
                       : c.corner === "bl"
-                        ? "bottom-0 left-0 items-center justify-center"
-                        : "bottom-0 right-0 items-center justify-center";
+                        ? "bottom-0 left-0 items-center justify-center pb-2 pl-2 sm:pb-4 sm:pl-4 lg:pb-6 lg:pl-6"
+                        : "bottom-0 right-0 items-center justify-center pb-2 pr-2 sm:pb-4 sm:pr-4 lg:pb-6 lg:pr-6";
                 return (
                   <a
                     key={c.key}
                     href={c.href}
-                    className={`group absolute w-1/2 h-1/2 flex flex-col ${posClass} transition-[filter] duration-300 hover:brightness-[1.08] bth-quadrant p-1.5 xs:p-2 sm:p-4`}
+                    className={`group absolute w-1/2 h-1/2 flex flex-col ${posClass} transition-[filter] duration-300 hover:brightness-[1.08] bth-quadrant p-1`}
                     style={{
                       background: `linear-gradient(145deg, ${c.from} 0%, ${c.to} 100%)`,
                       // @ts-expect-error -- custom properties consumed by the keyframes below
@@ -211,7 +211,7 @@ export default function MainHero() {
                     }}
                   >
                     <c.Icon className="w-6 h-6 xs:w-8 xs:h-8 sm:w-10 sm:h-10 lg:w-9 lg:h-9 xl:w-12 xl:h-12 text-white/95 drop-shadow-sm transition-transform duration-300 group-hover:scale-110 shrink-0" />
-                    <span className="mt-1 sm:mt-1.5 xl:mt-2 text-white font-extrabold uppercase leading-tight whitespace-pre-line drop-shadow-sm text-center text-[10px] xs:text-xs sm:text-sm lg:text-[12px] xl:text-[15px] px-1 sm:px-2 tracking-wide w-full overflow-hidden text-ellipsis">
+                    <span className="mt-1 sm:mt-1.5 xl:mt-2 text-white font-extrabold uppercase leading-tight whitespace-pre-line drop-shadow-sm text-center text-[10px] xs:text-xs sm:text-[13px] lg:text-[13px] xl:text-[15px] px-1 sm:px-2 tracking-wide max-w-[95%]">
                       {c.label}
                     </span>
                   </a>
