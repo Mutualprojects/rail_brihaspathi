@@ -40,14 +40,18 @@ function ShieldIcon(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
-function AxleIcon(props: React.SVGProps<SVGSVGElement>) {
+function TransportIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round" {...props}>
-      <path d="M7 34a17 17 0 0 1 34 0" />
-      <path d="M24 34l9-12" />
-      <circle cx="24" cy="34" r="2.4" fill="currentColor" stroke="none" />
-      <path d="M4 41h40" />
-      <path d="M10 41v-3M17 41v-3M31 41v-3M38 41v-3" />
+      {/* Train/Bus Body */}
+      <rect x="8" y="16" width="32" height="20" rx="4" />
+      <path d="M8 26h32" />
+      <path d="M14 16v10M34 16v10M24 16v10" />
+      <circle cx="15" cy="36" r="3" />
+      <circle cx="33" cy="36" r="3" />
+      {/* Wireless/Intelligent signals */}
+      <path d="M24 10c3.5 0 6.5 1.5 8.5 3.5" />
+      <path d="M24 5c5.5 0 10.5 2 14 5.5" />
     </svg>
   );
 }
@@ -81,13 +85,13 @@ const CAPABILITIES = [
     Icon: ShieldIcon,
   },
   {
-    key: "axle",
-    label: "FnMux\nSystem",
-    href: "/products/non-vital-multiplexer",
-    from: "#3ecf6a",
-    to: "#118a3e",
+    key: "transport",
+    label: "Intelligent\nTransport",
+    href: "/solutions/intelligent-transport-solutions",
+    from: "#8b5cf6",
+    to: "#5b21b6",
     corner: "br" as const,
-    Icon: AxleIcon,
+    Icon: TransportIcon,
   },
 ];
 
