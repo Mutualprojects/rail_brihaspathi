@@ -7,6 +7,7 @@ import { ArrowRight, Globe, Shield, Zap, Radio, Wifi, Cpu, ChevronRight } from "
 import { siteData } from "../data";
 import VisionMission from "../components/vision-mission";
 import Philosophy from "../components/philosophy";
+import TeamCarousel from "../components/team-carousel";
 
 const R = "#07518A";
 const S = "#1A8FD1";
@@ -238,6 +239,21 @@ export default function AboutPage() {
           ))}
         </div>
       </div>
+
+      {/* ═══════════════════════════════════════
+          LEADERSHIP TEAM CAROUSEL
+      ═══════════════════════════════════════ */}
+      <section className="py-10 bg-white relative">
+        <div className="text-center mb-8">
+          <p className="text-xs font-bold tracking-[0.18em] uppercase mb-3" style={{ color: "rgba(7,81,138,0.40)" }}>
+            Our People
+          </p>
+          <h2 className="font-extrabold" style={{ fontSize:"clamp(1.6rem,3.5vw,2.5rem)", color: "#0d1b2a" }}>
+            Meet the Leadership Team
+          </h2>
+        </div>
+        <TeamCarousel />
+      </section>
 
       {/* ═══════════════════════════════════════
           BOTTOM CTA BANNER

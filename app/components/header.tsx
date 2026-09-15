@@ -106,7 +106,7 @@ export default function Header() {
                     width={340}
                     height={64}
                     className="w-auto object-contain drop-shadow-sm group-hover:drop-shadow-md group-hover:scale-[1.04] transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
-                    style={{ height: isScrolled ? (isMobile ? "30px" : "44px") : isMobile ? "38px" : "64px" }}
+                    style={{ height: isScrolled ? (isMobile ? "30px" : "44px") : isMobile ? "38px" : "64px", width: "auto" }}
                     priority
                   />
                 </div>
@@ -228,6 +228,7 @@ export default function Header() {
             width={140}
             height={30}
             className="h-[30px] w-auto object-contain"
+            style={{ width: "auto", height: "auto" }}
           />
           <button
             onClick={() => setIsMobileMenuOpen(false)}

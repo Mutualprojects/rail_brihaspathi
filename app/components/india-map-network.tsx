@@ -140,6 +140,7 @@ export default function IndiaMapNetwork() {
               src="/highly-detailed-india-map-with-outline-state-country-borders-vector-illustration.png"
               alt="India Rail Network Map"
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               priority
               className="object-contain pointer-events-none"
             />
